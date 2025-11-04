@@ -1,0 +1,29 @@
+.mem-share {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0 0 0 15px;
+}
+
+.mem-share__icone {
+    width: 35px;
+    height: 35px;
+    display: block;
+    background-size: contain;
+}
+
+.facebook {
+    background: url('../images/facebook.png') no-repeat;
+}
+
+.whatsapp {
+    background: url('../images/whatsapp.png') no-repeat;
+}
+
+.linkedin {
+    background: url('../images/linkedin.png') no-repeat;
+}
+
+.twitter {
+    background: url('../images/twitter.png') no-repeat;
+}

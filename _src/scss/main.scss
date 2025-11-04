@@ -1,0 +1,46 @@
+/*
+* Copyright: 2025  
+* Desenvolvedor: Darmison Fonteles
+*/
+
+@forward 'global/all';
+@forward 'pages/all';
+@forward 'styles/all';
+
+body {
+	overflow-x: hidden;
+	touch-action: manipulation;
+    font-size: 17px;
+    background-color: #071235;
+    font-family: Open Sans, sans-serif;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.none-top-space{
+    padding-top:0!important
+}
+
+//==============================================
+// ARQUIVO CUSTOM
+//==============================================
+
+
+
+//==============================================
+// RESPONSIVIDADE
+//==============================================
+	
+@media screen and (max-width: 768px) {
+   
+}
+	
+@media screen and (max-width: 600px) {
+
+}
+  
+@media screen and (max-width: 479px) {
+
+}

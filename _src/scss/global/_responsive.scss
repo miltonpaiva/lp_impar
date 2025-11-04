@@ -1,0 +1,41 @@
+// -----------------------------------------------------------
+// RESPONSIVO
+// Regras das Media QUeries para responsivo
+// -----------------------------------------------------------
+
+//Classe padrão do Container
+
+
+$break-mobile: 568px;
+$break-small: 767px;
+$break-medium: 1023px;
+$break-medium-l: 1280px;
+$break-large: 1440px;
+$break-large-full: 1600px;
+
+@mixin respond-to($media) {
+
+  @if $media == xs {
+    @media only screen and (min-width: $break-mobile) { @content; }
+  }
+
+  @else if $media == sm {
+    @media only screen and (min-width: $break-small) { @content; }
+  }
+
+  @else if $media == md {
+    @media only screen and (min-width: $break-medium) { @content; }
+  }
+
+  @else if $media == mdl {
+    @media only screen and (min-width: $break-medium-l) { @content; }
+  }
+
+  @else if $media == lg{
+    @media only screen and ( min-width: $break-large){ @content; }
+  }
+
+  @else if $media == lgf {
+    @media only screen and ( min-width: $break-large-full) { @content; }
+  }
+}
