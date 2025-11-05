@@ -1,6 +1,6 @@
 <?php
 
-$result   = LP::getPostsByTax('home', 1, 'section_home', 'inovamos', 'DESC');
+$result   = LP::getPostsByTax('home', 5, 'section_home', 'inovamos', 'ASC');
 $contents = $result ? $result['posts'] : [];
 
 if (!empty($contents)) :
