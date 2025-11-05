@@ -1,6 +1,6 @@
 <?php
 
-$result   = LP::getPostsByTax('home', 1, 'section_home', 'por_que_escolher', 'DESC');
+$result   = LP::getPostsByTax('home', 1, 'section_home', 'presenca_brasil', 'DESC');
 $contents = $result ? $result['posts'] : [];
 $content  = current($contents);
 
@@ -14,7 +14,7 @@ if ($content):
 
       <!-- Imagem à esquerda -->
       <div class="relative order-2 md:order-1" data-aos="fade-right">
-        <img src="<?= $content->img ?: get_template_directory_uri(); ?>/assets/images/Mapa.png" class="" loading="lazy"
+        <img src="<?= $content->img ?: $content->imagem ?: get_template_directory_uri() . '/assets/images/Mapa.png'; ?>" class="" loading="lazy"
           width="auto" height="60" alt="Mapa do Brasil com regiões destacadas">
       </div>
 

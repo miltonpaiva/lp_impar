@@ -1,6 +1,6 @@
 <?php
 
-$result   = LP::getPostsByTax('home', 1, 'section_home', 'por_que_escolher', 'DESC');
+$result   = LP::getPostsByTax('home', 1, 'section_home', 'inovamos', 'DESC');
 $contents = $result ? $result['posts'] : [];
 
 if (!empty($contents)) :
@@ -26,7 +26,7 @@ if (!empty($contents)) :
         <div
           class="aspect-square bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-3xl backdrop-blur-sm border border-white/10 p-8 flex items-center justify-center">
           <div class="text-center space-y-4">
-            <img src="<?= $content->img ?: get_template_directory_uri(); ?>/assets/images/conceito-de-colagem.jpg"
+            <img src="<?= $content->img ?: $content->imagem ?:  get_template_directory_uri() . '/assets/images/conceito-de-colagem.jpg'; ?>"
               class="rounded-3xl" loading="lazy" width="auto" height="60" alt="">
           </div>
         </div>

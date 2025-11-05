@@ -1,6 +1,6 @@
 <?php
 
-$result   = LP::getPostsByTax('home', 1, 'section_home', 'por_que_escolher', 'DESC');
+$result   = LP::getPostsByTax('home', 1, 'section_home', 'conectando_pessoas', 'DESC');
 $contents = $result ? $result['posts'] : [];
 $content  = current($contents);
 
@@ -21,7 +21,7 @@ if ($content):
       <div class="relative" data-aos="fade-left" data-aos-delay="200">
         <div
           class="aspect-square bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-full backdrop-blur-sm border border-white/10 p-12 flex items-center justify-center">
-          <img src="<?= $content->img ?: get_template_directory_uri(); ?>/assets/images/futurista-em-smartwatch.jpg"
+          <img src="<?= $content->img ?: $content->imagem ?: get_template_directory_uri() . '/assets/images/futurista-em-smartwatch.jpg'; ?>"
             class="rounded-full" loading="lazy" width="auto" height="60" alt="">
         </div>
       </div>

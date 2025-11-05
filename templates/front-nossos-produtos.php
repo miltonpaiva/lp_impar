@@ -27,7 +27,7 @@ if (!empty($contents)) :
 
         <div class="bg-slate-800/60 backdrop-blur-sm border border-white/10 rounded-2xl p-8 text-center hover:scale-105 transition-transform duration-300" data-aos="zoom-in">
             <div class="flex justify-center mb-6">
-                <img src="<?= $content->img ?: get_template_directory_uri(); ?>/assets/images/samu-logo.png" alt="Logo padrão" class="w-20 h-20 object-contain">
+                <img src="<?= $content->img ?: $content->imagem ?:  get_template_directory_uri() . '/assets/images/samu-logo.png'; ?>" alt="Logo padrão" class="w-20 h-20 object-contain">
             </div>
             <h3 class="text-2xl font-semibold mb-4"><?= $content->titulo; ?></h3>
             <p class="text-slate-400 mb-6">
@@ -46,7 +46,7 @@ if (!empty($contents)) :
 
         <div class="bg-slate-800/60 backdrop-blur-sm border border-white/10 rounded-2xl p-8 text-center hover:scale-105 transition-transform duration-300" data-aos="zoom-in" data-aos-delay="200">
             <div class="flex justify-center mb-6">
-                <img src="<?= $content->img ?: get_template_directory_uri(); ?>/assets/images/samu-logo.png" alt="Logo padrão" class="w-20 h-20 object-contain">
+                <img src="<?= $content->img ?: $content->imagem ?:  get_template_directory_uri(); ?>/assets/images/samu-logo.png" alt="Logo padrão" class="w-20 h-20 object-contain">
             </div>
             <h3 class="text-2xl font-semibold mb-4"><?= $content->titulo; ?></h3>
             <p class="text-slate-400 mb-6">

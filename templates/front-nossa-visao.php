@@ -43,7 +43,7 @@ if ($content):
       <div class="mt-16 relative" data-aos="fade-up" data-aos-delay="400">
         <div class="w-128 h-80 mx-auto relative">
           <div class="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-cyan-400/20 rounded-full blur-2xl"></div>
-          <img src="<?= $content->img ?: get_template_directory_uri(); ?>/assets/images/Photoroom1.png"
+          <img src="<?= $content->img ?: $content->imagem ?:  get_template_directory_uri() . '/assets/images/Photoroom1.png'; ?>"
             class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" loading="lazy" width="auto" height="60"
             alt="">
         </div>
